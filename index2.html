@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Weather-APP</title>
+</head>
+<style>
+    /* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+/* Main Card */
+body > div:last-child{
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Search Section */
+body > div:first-child{
+    position: absolute;
+    top: 20%;
+    display: flex;
+    gap: 10px;
+}
+
+#city-input{
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#search-button{
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background: #4facfe;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+#search-button:hover{
+    background: #00c6ff;
+    transform: scale(1.05);
+}
+
+/* Weather Info */
+#city-name{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+#city-time{
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+#city-temp{
+    font-size: 40px;
+    font-weight: 600;
+    color: #4facfe;
+}
+</style>
+<body>
+    <div>
+
+        <input id="city-input" type="text" placeholder="Enter City Name">
+        <button id="search-button">Search</button>
+    </div>
+    <div>
+        <h3 id="city-name">Canada,Ontario - Toronto</h3>
+        <h6 id="city-time">LocalTime </h6>
+        <p id="city-temp">l3</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
